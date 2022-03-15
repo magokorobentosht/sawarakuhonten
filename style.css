@@ -1,0 +1,681 @@
+@charset "UTF-8";
+
+body {
+    background-color: #fff;
+    color: #000 ;
+    line-height: 1;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #959595;
+}
+
+#wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+p {
+    font-size: 17px;
+    font-weight: bold;
+}
+.fuchidori {
+    color: #000;
+    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+.color {
+    color: red;
+}
+
+/* headerはここから */
+header {
+    max-width: 1200px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu ul{
+    display: flex;
+    padding-top: 20px;
+}
+.nav-menu ul li {
+    margin-left: 2em;
+}
+
+/* topはここから */
+#top {
+    max-width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* aboutはここから */
+#id-about {
+    margin-top: 120px;
+    text-align: center;
+}
+.about p{
+    padding-top: 30px;
+    line-height: 30px;
+}
+.about span {
+    font-weight: bold;
+}
+
+/* serviceここから */
+#id-service {
+    max-width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+#id-service h1 {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.service {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.service-inner {
+    width: 470px;
+    height: 330px;
+    background-color: #daf2e1;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.service-inner img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.service-inner p {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+/* menuはここから */
+#id-menu {
+    max-width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+#id-menu h1 {
+    color: #fff;
+    background-color: #05a73a;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#id-menu h2 {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.menu {
+    background-color: #daf2e1;
+    margin-top: 10px;
+}
+.menu-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-inner img {
+    max-width: 470px;
+    height: auto;
+}
+.menu-inner-images p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    max-width: 470px;
+    height: 40px;
+    background-color: #05a73a;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 20px;
+}
+.menu-inner-sentence {
+    margin-top: 30px;
+    text-align: center;
+}
+.menu-inner-sentence h3 {
+    margin-bottom: 20px;
+}
+.menu-inner-sentence p {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+.menu2 {
+    background-color: #daf2e1;
+    margin-top: 10px;
+}
+.menu2-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu2-inner img {
+    max-width: 470px;
+    height: auto;
+    margin-top: 25px;
+}
+.menu2-inner-details {
+    margin-left: 20px;
+}
+.menu2-inner-price p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    max-width: 470px;
+    height: 40px;
+    background-color: #05a73a;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.menu2-inner-sentence {
+    margin-top: 30px;
+}
+.menu2-inner-sentence h3 {
+    margin-bottom: 10px;
+}
+.menu2-inner-sentence p {
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+.menu2-inner-sentence span {
+    font-weight: bold;
+}
+.menu2-inner-sentence-details {
+    width: 470px;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid #000; /* 枠線 */
+}
+.menu2-inner-sentence-details p {
+    font-size: 15px;
+}
+
+/* trialここから */
+.trial {
+    max-width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+/* exampleここから */
+#id-example {
+    max-width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+#id-example h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.example img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* questionここから */
+#id-question {
+    max-width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+#id-question h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.faq {
+    font-weight: normal;
+    background: #daf2e1;
+    padding: 30px;
+    border-radius: 10px;
+}
+.faq dt {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted;
+    font-weight: bold;
+}
+.faq dt:before {
+    content: "Q";
+    font-weight: normal;
+    background-color: #05a73a;
+    color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.6;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1em;
+    margin-right: .5em;
+}
+.faq dd {
+    line-height: 25px;
+    margin-bottom: 2em;
+}
+.faq dd:last-child{
+    margin-bottom: 0;
+}
+
+/* contactここから */
+#id-contact {
+    max-width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+/* shopinfoここから */
+#id-shopinfo {
+    max-width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+#id-shopinfo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.shopinfo {
+    max-width: 1000px;
+    height: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #daf2e1;
+    display: flex;
+    justify-content: center;
+}
+.shopinfo-img {
+    margin-right: 80px;
+    padding-top: 40px;
+}
+.shopinfo-details h2{
+    margin-bottom: 20px;
+}
+.shopinfo-details ul {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+/* footerここから */
+footer {
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #05a73a;
+    color: #fff;
+    padding-top: 35px;
+}
+
+/*ここからタブレットサイズ（画面の横幅が560px〜959px）*/
+@media screen and (max-width:959px) {
+    h1 {
+        font-size: 3.1vw;
+    }
+    
+    h2 {
+        font-size: 2.6vw;
+    }
+    
+    h3 {
+        font-size: 2.0vw;
+    }
+    
+    h4 {
+        font-size: 1.5vw;
+    }
+    
+    p {
+        font-size: 1.7vw;
+        font-weight: normal;
+    }
+
+    /* headerここから */
+    .header {
+        width: 100%;
+        display: block;
+    }
+    .logo {
+        max-width: 50%;
+        margin-left: 30px;
+    }
+    .nav-menu ul {
+        margin-left: 30px;
+    }
+
+    /* TOPここから */
+    #top {
+        max-width: 800px;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    #id-menu {
+        max-width: 750px;
+    }
+    .menu-inner-images img {
+        max-width: 350px;
+        height: auto;
+    }
+    .menu2-inner-images img {
+        max-width: 350px;
+        height: auto;
+        margin-top: 60px;
+    }
+    .menu2-inner-sentence-details {
+        width: 328px;
+        height: auto;
+    }
+    .menu2-inner-sentence-details p {
+        font-size: 1.3vw;
+    }
+    .trial {
+        max-width: 750px;
+        height: auto;
+    }
+    #id-example {
+        max-width: 750px;
+        height: auto;
+    }
+    #id-service {
+        max-width: 750px;
+    }
+    .service-inner {
+        max-width: 350px;
+    }
+    #id-question {
+        max-width: 750px;
+    }
+    #id-contact {
+        max-width: 750px;
+        height: auto;
+    }
+    #id-shopinfo {
+        max-width: 750px;
+    }
+    footer {
+        width: auto;
+    }  
+}
+
+/*ここからSPサイズ（画面の横幅が559pxまで）*/
+@media screen and (max-width: 559px) {
+    h1 {
+        font-size: 4.3vw;
+    }
+    
+    h2 {
+        font-size: 3.4vw;
+    }
+    
+    h3 {
+        font-size: 3.0vw;
+    }
+    
+    h4 {
+        font-size: 2.3vw;
+    }
+    
+    p {
+        font-size: 2.5vw;
+        font-weight: normal;
+        line-height: 5.0vw;
+    }
+    
+    /*ここからheader */
+    header {
+        height: 60px;
+    }
+    .drawer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: 70px;
+        padding: 0 1em;
+      }
+      
+      /* ナビゲーション部分 */
+      .nav-menu ul {
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0 auto;
+      }  
+      .nav-menu li {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-bottom: 1px dotted #05a73a;
+      }        
+      .nav-menu {
+        width: 100%;
+        text-align: center;
+        background-color: #daf2e1;
+        position: relative;
+        z-index: 30;
+        transition: 0.5s ease; /* 滑らかに表示 */
+        -webkit-transform: translateX(-105%); /* 画面より100％外へ左に押し出し非表示にさせる */
+        -moz-transform: translateX(-105%);
+        transform: translateX(-105%); 
+      }
+      
+      /* OPEN時のうごき */
+      .nav-menu.open {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        transform: translateX(0%); /*メニューを元の位置へ戻す*/
+      }
+      
+      /* トグルボタンのスタイル指定 */
+      .toggle {
+        display: block;
+        position: relative; 
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        z-index: 3;
+        right: 15px;
+      }
+      
+      .toggle span {
+        display: block;
+        position: absolute;
+        width: 50px;
+        border-bottom: solid 4px #333;
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+      }
+      
+      /* 各ボーダーすしずつずらす */
+      .toggle span:nth-child(1) {
+        top: 5px;
+      }
+      .toggle span:nth-child(2) {
+        top: 18px;
+      }
+      .toggle span:nth-child(3) {
+        top: 32px;
+      }
+      .toggle.active span:nth-child(1) {
+        top: 18px;
+        /* １番目のspanをマイナス45度に */
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      
+      /* ２番目と３番目のspanを45度に */
+      .toggle.active span:nth-child(2),
+      .toggle.active span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+    #top {
+        width: 98%;
+        margin-top: 20px;
+        position: relative;
+        z-index: 10;
+    }
+    #id-about {
+        margin: 70px 10px;
+    }
+    #id-menu {
+        width: 95%;
+        margin-top: 60px;
+    }
+    .menu-inner {
+        text-align: center;
+        display: block;
+    }
+    .menu-inner-images img {
+        max-width: 100%;
+        height: auto;
+    }
+    .menu-inner-images p {
+        margin-bottom: 10px;
+    }
+    .menu-inner-sentence {
+        margin: 20px;
+    }
+    .menu-inner-sentence p {
+        line-height: 5.0vw;
+    }
+    .menu2-inner {
+        text-align: center;
+        display: block;
+    }
+    .menu2-inner-images img {
+        margin-top: 5px;
+        max-width: 100%;
+        height: auto;
+    }
+    .menu2-inner-details {
+        margin: 0;
+    }
+    .menu2-inner-sentence-details {
+        width: 100%;
+    }
+    .menu2-inner-sentence-details p {
+        font-size: 2.3vw;
+    }
+    #id-trial {
+        width: 95%;
+    }
+    #id-example{
+        width: 95%;
+        margin-top: 60px;
+    }
+    #id-service {
+        width: 95%;
+        margin-top: 60px;
+    }
+    .service {
+        display: block;
+    }
+    .service-inner {
+        width: 100%;
+    }
+    #id-question {
+        width: 95%;
+    }
+    dt {
+        line-height: 2em;
+    }
+    #id-contact {
+        width: 95%;
+        margin-top: 60px;
+    }
+    #id-shopinfo {
+        width: 95%;
+        margin-top: 60px;
+    }
+    .shopinfo {
+        display: block;
+        text-align: center;
+    }
+    .shopinfo-img {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .shopinfo-details li {
+        font-size: 3.0vw;
+        line-height: 5.5vw;
+    }
+
+}
