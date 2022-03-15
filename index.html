@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>まごころ弁当早良区本店</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="header">
+                <div class="drawer">
+                <div class="logo">
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="まごころ弁当早良区本店" srcset="" class="logo-img"></a>
+                </h1>
+                </div>
+                <!-- ハンバーガーメニュー部分 -->
+                <div class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                </div>
+                <!-- drawerここまで -->
+                <nav>
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="#top">TOP</a></li>
+                            <li><a href="#id-menu">お弁当メニュー</a></li>
+                            <li><a href="https://form.run/@magokorobento-sawarakuhonten" target="_blank" rel="norefferrer">無料試食</a></li>
+                            <li><a href="#id-service">サービス</a></li>
+                            <li><a href="#id-question">よくある質問</a></li>
+                            <li><a href="https://form.run/@magokorobento-sawarakuhonten" target="_blank" rel="norefferrer">資料請求</a></li>
+                            <li><a href="#id-shopinfo">店舗概要</a></li>
+                        </ul>
+                    </div>    
+                </nav>
+            </div>
+            <!-- ハンバーガーメニューjQuery実装 -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script>
+              $(function() {
+                $('.toggle').click(function() {
+                  $(this).toggleClass('active');
+                  $('.nav-menu').toggleClass('open');
+                });
+              });
+            </script>
+        </header>
+
+        <main>
+            <div id="top">
+            <div class="slideshow">
+                <div><img src="images/top2.jpg" alt="トップ画像1"></div>
+                <div><a href="https://form.run/@magokorobento-sawarakuhonten" target="_blank" rel="norefferrer"><img src="images/top3.jpg" alt="トップ画像2"></a></div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+            <script>
+            $(function () {
+              $('.slideshow').slick({
+                autoplay: true,
+                autoplaySpeed: 1500,
+                dots: true,
+                fade: true,
+                speed: 1500,
+                arrows: true,
+              });
+            });
+            </script>
+            </div>
+            <section id="id-about">
+                <div class="about">
+                    <h1>まごころ弁当とは？</h1>
+                    <p>毎日、健康で笑顔でいられるように。まごころ込めてお届けします。<br>
+                        まごころ弁当は、原材料にこだわり抜き、ご高齢者様向けに味付け、<br>
+                        栄養バランスなどに配慮したお弁当を毎日、日替わり献立でお届けします。<br>
+                        もちろん、1食だけのご注文も喜んで承ります。<br>
+                        お弁当は<span class="color">「小町」「普通食」「カロリー調整食」「たんぱく調整食」「ムース食」</span>の<br>
+                        5種類をご用意しています。<br>
+                        お客様の生活スタイルに合わせてお気軽にご注文ください。</p>
+                </div>
+            </section>
+            <section id="id-service">
+                <h1>まごころ弁当のサービス</h1>
+                <div class="service">
+                    <div class="service-inner">
+                        <img src="images/icon-ozen.jpg" alt="お膳アイコン" srcset="">
+                        <h2 class="fuchidori">個別対応</h2>
+                        <p>噛む力、飲み込む力が低下した方のために、
+                            <br><span class="color">おかゆや刻み食のご要望</span>もお応えしています。
+                            <br>お気軽にお申し付けください。</p>
+                    </div>
+                    <div class="service-inner">
+                        <img src="images/icon-track.jpg" alt="トラックアイコン" srcset="">
+                        <h2 class="fuchidori">1食からお届け</h2>
+                        <p>毎日のご利用でなくても大丈夫です。<br><span class="color">必要な日の1食分から</span>ご利用いただけます。
+                            <br>お客様のライフスタイルに合わせてご利用ください。</p>
+                    </div>                
+                </div>
+                <div class="service">
+                    <div class="service-inner">
+                        <img src="images/icon-house.jpg" alt="家アイコン" srcset="">
+                        <h2 class="fuchidori">安否確認</h2>
+                        <p>安否確認を兼ねてお弁当は<span class="color">原則手渡し</span>となります。<br>
+                            安否確認のご連絡がご希望の方は、<br>事前に緊急連絡先をお知らせください。
+                            <br>もちろん、ご希望の際は<span class="color">置き配達も可能</span>です。</p>
+                    </div>
+                    <div class="service-inner">
+                        <img src="images/icon-heart.jpg" alt="ハートアイコン" srcset="">
+                        <h2 class="fuchidori">3分間サービス</h2>
+                        <p>配達中の3分間に<span class="color">お手伝い</span>が必要な場合は<br>配達員にお申し付けください。<br>
+                            例えば...服薬確認、配食後の施錠、
+                            <br>電子レンジ温め（ご自身でできない方）など</p>
+                    </div>                
+                </div>
+            </section>
+            <section id="id-menu">
+                <h1>お弁当メニュー</h1>
+                <div class="menu">
+                    <h2 class="fuchidori">普通食</h2>
+                        <div class="menu-inner">
+                            <div class="menu-inner-images">
+                                <img src="images/futsu-new.png" alt="普通食セット" srcset="">
+                                <p>ごはん付 500円（税込540円）</p>
+                            </div>
+                            <div class="menu-inner-images">
+                                <img src="images/futsuokazu-new.png" alt="普通食おかずのみ" srcset="">
+                                <p>おかずのみ 450円（税込486円）</p>
+                            </div>
+                        </div>
+                        <div class="menu-inner-sentence">
+                            <h3 class="fuchidori">こんな方におすすめ</h3>
+                            <p>食事制限はなく、<span class="color">低塩分・低カロリー</span>などからだに優しいお食事を考えられている方。<br>
+                                一般のご高齢者向けの和食中心のお弁当です。</p>
+                            <p>カロリー目安(おかずのみ):200〜300kcal前後<br>
+                                塩分:2〜3g前後</p>
+                        </div>
+                </div>
+                <div class="menu">
+                    <h2 class="fuchidori">まごころ小町</h2>
+                        <div class="menu-inner">
+                            <div class="menu-inner-images">
+                                <img src="images/komachisho-new.png" alt="小町・小" srcset="">
+                                <p>小町・小 330円（税込356円）</p>
+                            </div>
+                            <div class="menu-inner-images">
+                                <img src="images/komachidai-new.png" alt="小町・大" srcset="">
+                                <p>小町・大 430円（税込464円）</p>
+                            </div>
+                        </div>
+                        <div class="menu-inner-sentence">
+                            <h3 class="fuchidori">こんな方におすすめ</h3>
+                            <p>食事制限はなく、<span class="color">低塩分・低カロリー</span>などからだに優しいお食事を考えられている方。
+                                <br>一般のご高齢者向け和食中心、普通食の<span class="color">少量版</span>のお弁当です。</p>
+                            <p>カロリー目安(おかずのみ/小サイズ):150〜300kcal前後<br>
+                                塩分:1〜2g前後</p>
+                        </div>
+                </div>
+                <div class="menu2">
+                    <h2 class="fuchidori">カロリー調整食</h2>
+                    <div class="menu2-inner">
+                        <div class="menu2-inner-images">
+                            <img src="images/cal-new.png" alt="カロリー調整食" srcset="">
+                        </div>
+                        <div class="menu2-inner-details">
+                            <div class="menu2-inner-price">
+                            <p>ごはん付 750円（税込810円）</p>
+                            <p>おかずのみ 700円（税込756円）</p>
+                            </div>
+                            <div class="menu2-inner-sentence">
+                            <h3 class="fuchidori">こんな方におすすめ</h3>
+                            <p><span class="color">カロリー・塩分調整</span>が必要な方。<br>
+                                カロリーを一定の値に調整しています。<br>
+                                栄養バランスもよく、ダイエットや食事療法にも最適です。</p>
+                            <p>カロリー目安(おかずのみ):240kcal前後<br>
+                                塩分:1.5〜2g前後</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu2">
+                    <h2 class="fuchidori">たんぱく調整食</h2>
+                    <div class="menu2-inner">
+                        <div class="menu2-inner-images">
+                            <img src="images/tanpaku-new.png" alt="たんぱく調整食" srcset="">
+                        </div>
+                        <div class="menu2-inner-details">
+                            <div class="menu2-inner-price">
+                            <p>ごはん付 810円（税込874円）</p>
+                            <p>おかずのみ 750円（税込810円）</p>
+                            </div>
+                            <div class="menu2-inner-sentence">
+                            <h3 class="fuchidori">こんな方におすすめ</h3>
+                            <p>医師の指導の下、<span class="color">たんぱく質の摂取量の注意</span>が必要な方。<br></p>
+                                <div class="menu2-inner-sentence-details">
+                                <p><span>たんぱく調整食の栄養基準</span><br>
+                                 カロリー:294kcal、炭水化物:29.1g以下、たんぱく質: 10g以下、<br>
+                                カリウム:500mg以下、資質:16.9g以下、リン:210mg<br>
+                                食塩相当量:1.3～2g （1食当たり/おかずのみ）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu2">
+                    <h2 class="fuchidori">ムース食</h2>
+                    <div class="menu2-inner">
+                        <div class="menu2-inner-images">
+                            <img src="images/musu-new.png" alt="ムース食セット" srcset="">
+                        </div>
+                        <div class="menu2-inner-details">
+                            <div class="menu2-inner-price">
+                            <p>ごはん付 650円（税込702円）</p>
+                            <p>おかずのみ 600円（税込648円）</p>
+                            </div>
+                            <div class="menu2-inner-sentence">
+                            <h3 class="fuchidori">こんな方におすすめ</h3>
+                            <p>食べ物を噛むことや、飲み込むことが困難な方。<br>
+                                プリンのようなプルっとした食感で、味付けもしっかりしています。
+                                料理の香りや風味も感じられます。<br>
+                            <p>※UDF（ユニバーサルデザインフード）<span class="color">「舌でつぶせる」</span>に該当します。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="id-trial" class="trial">
+                <a href="https://form.run/@magokorobento-sawarakuhonten" target="_blank" rel="norefferrer">
+                <img src="images/tryal-banner.jpg" alt="無料試食バナー" srcset=""></a>
+            </div>
+            <section id="id-example">
+                <h1>利用一例
+                </h1>
+                <div class="example"> 
+                    <img src="images/example.jpg" alt="利用一例" srcset="">
+                </div>
+            </section>
+            <section id="id-question">
+                <h1>よくある質問</h1>
+                    <dl class="faq">
+                        <dt>土曜日、日曜日、祝日も配達してくれるのですか？</dt>
+                            <dd>お正月三が日だけお休みをいただきます。<br>またご希望の方には、年末の12月31日に
+                                おせち料理をお届けさせていただきます。<br></dd>
+                        <dt>何時くらいに配達してくれるのですか？</dt>
+                            <dd>昼食はおよそ10時～12時、夕食は14時～18時の間でお届けいたします。<br>
+                                (お住いの場所により多少のずれがございます。)<br></dd>
+                        <dt>毎日注文しないと配達してもらえないのですか？</dt>
+                            <dd>1日からでも配達いたします。昼食のみ、または夕食のみでも結構です。ご注文はお電話にて前日の18時までにお願いいたします。<br></dd>
+                        <dt>ひとつだけでも注文できますか？</dt>
+                            <dd>もちろんです。ご家族・オフィスを問わず一回一食から配達させていただきます。<br></dd>
+                        <dt>高齢者向けとありますが、年齢や制限などはありますか？</dt>
+                            <dd>年齢などの制限はございません。皆様にご注文いただけます。健康維持のため当店のお弁当を召し上がっている若い方もいらっしゃいます。<br></dd>
+                        <dt>メニューにはどのようなこだわりがありますか？</dt>
+                            <dd>70歳以上の高齢者様に必要なカロリーである1750～2200kcalを目安に、おやつも含めた1日分の中、1食ご飯付きで450～550Kaclを目安として、16品目前後の食材を使用しています。和食中心、心が和む家庭の味付けです。食材の大きさ、形、固さ、ご高齢者様が食べやすいようにしつつ、ある程度歯ごたえも楽しめるよう残しています。<br></dd>
+                        <dt>メニューは何種類ありますか？</dt>
+                            <dd>日替わりの一種類だけですが、管理栄養士がご高齢者様の健康に配慮したメニュー作りをしております。また、ご高齢者様向けにやわらかく食べやすい大きさに調理しておりますので、安心してお召し上がりいただけます。健康上食べられないものは、事前にお申し付け下さい。他のメニューと入れ替えさせていただきます。<br></dd>
+                        <dt>お弁当の日持ちはするのですか？</dt>
+                            <dd>配達後なるべく早くお召し上がり下さい。すぐに召し上がれない場合は高温多湿の場所は避けて保管し、遅くと
+                                も昼食は14時、夕食は20時までにお召し上がり下さい。昼食分を夕食に食べたり、夕食分を翌日に食べるなどは絶対になさら
+                                ないでください。食べ残しなどは後で食べたりせず、必ず廃棄処分してください。
+                                <br></dd>
+                        <dt>お弁当の受け渡しは手渡しですか？</dt>
+                            <dd>お客様の安否確認も兼ねておりますので、お客様へ手渡しでお届けする事が原則です。やむをえない事情
+                                や、お留守が事前に分かっている場合など臨機応変に対応いたします。事前にご相談ください。                                
+                                <br></dd>                        
+                        <dt>キャンセル(注文の取り消し)はできますか？</dt>
+                            <dd>前日の18時までにご連絡いただけましたら受け付けさせていただきます。キャンセル料はかかりません。<br></dd>
+                    </dl>
+            </section>
+            <div id="id-contact" class="contact">
+                <a href="https://form.run/@magokorobento-sawarakuhonten" target="_blank" rel="norefferrer"><img src="images/contact-banner.jpg" alt="資料請求・お問合せバナー" srcset=""></a>
+            </div>
+            <section id="id-shopinfo">
+                <h1>店舗概要</h1>
+                <div class="shopinfo">
+                    <div class="shopinfo-img">
+                        <img src="images/rogo.jpg" alt="まごころ弁当ロゴ" srcset="">
+                    </div>
+                    <div class="shopinfo-details">
+                        <h2>まごころ弁当 早良区本店</h2>
+                        <ul>
+                            <li>TEL 092-407-9796</li>
+                            <li>FAX 092-400-9559</li>
+                            <li>住所 福岡県福岡市早良区干隈3-1-2</li>
+                            <li>営業時間 9:00～18:30</li>
+                            <li>店休日 お正月三が日のみ（土・日・祝も配達しています）</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h4>Copyright (C) まごころ弁当 早良区本店 All Rights Reserved.</h4>
+        </footer>
+    </div>
+</body>
+</html>
